@@ -22,12 +22,11 @@ const interval = setInterval(() => {
   button.textContent = `Clicks per second: ${(clicks / elapsedTime).toFixed(2)}`;
 
   // If the elapsed time is greater than or equal to 5 seconds, stop the interval
+  // and disable the button
   if (elapsedTime >= 5) {
     clearInterval(interval);
+    button.disabled = true;
 
     // Display the result message
     const result = document.createElement("div");
-    result.textContent = `Your clicks per second result is: ${(clicks / elapsedTime).toFixed(2)}`;
-    document.body.appendChild(result);
-  }
-}, 1000);
+    result.textContent =
