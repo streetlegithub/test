@@ -29,4 +29,7 @@ const interval = setInterval(() => {
 
     // Display the result message
     const result = document.createElement("div");
-    result.textContent =
+    result.textContent = `Your clicks per second result is: ${(clicks / 5).toFixed(2)}`;
+    document.body.appendChild(result);
+  }
+}, 1000);
