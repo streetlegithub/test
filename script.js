@@ -14,10 +14,15 @@ button.addEventListener("click", () => {
 });
 
 // Set up an interval to check the elapsed time and update the button text
-setInterval(() => {
+const interval = setInterval(() => {
   // Calculate the elapsed time in seconds
   const elapsedTime = (Date.now() - startTime) / 1000;
 
   // Update the button text with the clicks per second
   button.textContent = `Clicks per second: ${(clicks / elapsedTime).toFixed(2)}`;
+
+  // If the elapsed time is greater than 5 seconds, stop the interval
+  if (elapsedTime > 5) {
+    clearInterval(interval);
+  }
 }, 1000);
