@@ -1,50 +1,15 @@
-/* Set the default text color to purple */
 body {
-  color: purple;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-/* Set the background color of the header and footer to a lighter shade of purple */
-header,
-footer {
-  background-color: #dda0dd;
-}
-
-/* Set the background color of the nav menu to a darker shade of purple */
-nav {
-  background-color: #800080;
-}
-
-/* Style the links in the nav menu */
-nav a {
-  color: white;
-  text-decoration: none;
+#counter {
+  font-size: 36px;
   font-weight: bold;
-  display: block;
-  padding: 10px 15px;
 }
 
-/* Style the hovered state of the links in the nav menu */
-nav a:hover {
-  background-color: #663399;
-}
-
-/* Set the background color of the main content area to a gradient that goes from purple to white */
-main {
-  background: linear-gradient(to bottom, #800080, #ffffff);
-  padding: 20px;
-}
-
-/* Style the buttons on the page */
 button {
-  background-color: #800080;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
+  font-size: 24px;
+  padding: 10px 20px;
   cursor: pointer;
-}
-
-/* Style the hovered state of the buttons */
-button:hover {
-  background-color: #663399;
 }
