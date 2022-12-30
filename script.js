@@ -21,8 +21,8 @@ const interval = setInterval(() => {
   // Update the button text with the clicks per second
   button.textContent = `Clicks per second: ${(clicks / elapsedTime).toFixed(2)}`;
 
-  // If the elapsed time is greater than 5 seconds, stop the interval
-  if (elapsedTime > 5) {
+  // If the elapsed time is greater than or equal to 5 seconds, stop the interval
+  if (elapsedTime >= 5) {
     clearInterval(interval);
   }
 }, 1000);
