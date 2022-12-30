@@ -24,5 +24,10 @@ const interval = setInterval(() => {
   // If the elapsed time is greater than or equal to 5 seconds, stop the interval
   if (elapsedTime >= 5) {
     clearInterval(interval);
+
+    // Display the result message
+    const result = document.createElement("div");
+    result.textContent = `Your clicks per second result is: ${(clicks / elapsedTime).toFixed(2)}`;
+    document.body.appendChild(result);
   }
 }, 1000);
